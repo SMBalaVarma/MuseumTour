@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+  user-select: none;
+}
+
+.render {
+  border: 2px black solid;
+  border-radius: 10px;
+  margin: 10px;
+  background-image: url();
+}
+
+#crosshair {
+    position: absolute;
+    display: none;
+    top: 50vh;
+    left: 50vw;
+    font-weight: 600;
+    font-size: 2em;
+    vertical-align: middle;
+  }
+
+  #crosshair img {
+    width: 40%;
+  }
+
+.container {
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  padding: auto;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.card {
+  height: 80%;
+  width: 80%;
+  background-image: radial-gradient(
+    rgba(247, 241, 221, 0.8),
+    rgba(219, 203, 170, 0.8)
+  );
+  border: 3px groove #c99157;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styling for the close button */
+.close-btn {
+  position: relative;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+.close-btn::after {
+  content: "\00d7";
+  font-size: 2.4em;
+}
+
+/* Styling for the image */
+.image-container {
+  min-width: 500px;
+  height: 100%;
+  background-image: radial-gradient(
+    rgb(193, 185, 144),
+    rgba(129, 121, 82, 0.8)
+  );
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Styling for the info section */
+.info {
+  /* width: 50%; */
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4%;
+}
+
+/* Styling for the heading */
+.heading {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the time period and category */
+.meta-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 14px;
+  color: #5a5044;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Styling for the info text */
+.info-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-weight: 400;
+  color: #24211d;
+}
+
+button {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  padding: 0%;
+  margin: 0%;
+}
+
+/* loader */
+
+.loading-container {
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bouncybox {
+  height: 100px;
+  width: 40px;
+
+  .bouncy {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background:black;
+    animation: bouncy 2s infinite ease-in-out;
+  }
+}
+
+.loading{
+    position: absolute;
+    margin-right: 50px;
+    top: 60vh;
+    left:47vw;
+    font-size: 2em;
+    font-weight: 500
+}
+
+@keyframes bouncy {
+  40% {
+    height: 40px;
+  }
+  50% {
+    transform: translate(0, 65px);
+    height: 34px;
+    border-radius: 20px;
+  }
+  65% {
+    height: 40px;
+  }
+}
+
+/* ------- CSS 2D Renderer */
+.hotspot{
+  border-radius: 0px 12px 12px 12px;
+  position: absolute;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition-duration: 0.2s;
+  transition-property: opacity, transfrom;
+}
+
+
+
+.hide{
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.hover{
+  padding: 5px;
+  width: 150px;
+  border: 3px groove rgb(54, 56, 19);
+  background-image: radial-gradient(rgb(193, 185, 144),rgba(198, 187, 135, 0.6));
+  color: #ffffff;
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.show{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+  max-width: 300px;
+  color: #000000;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 4px groove rgb(193, 185, 144);
+  background-image: radial-gradient(rgb(193, 185, 144),rgba(198, 187, 135, 0.6));
+  opacity: 1;
+  transform: translateY(-10px);
+}
+.dbl_click{
+  font-size: 12px;
+}

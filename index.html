@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Museum Virtual Tour</title>
+  </head>
+  <body>
+    <div class="loading-container">
+      <div class="bouncybox">
+        <div class="bouncy"></div>
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+    <div id="crosshair">
+      <img src="assets/crosshair_dot.png" alt="crosshair" />
+    </div>
+
+    <div class="instructions">
+      <div>
+        <div>
+          <div>The Virtual Museum Tour</div>
+          <!-- <div>use <span><img src="assets/wasd keys.png" alt="wasd" class="icon_1"></span>keys to move around the experience</div>
+          <div>use <span><img src="assets/mouse icon.png" alt="mouse" class="icon"></span>to look around</div>
+          <div>use <span><img src="assets/t key.png" alt="t key" class="icon"></span>to toggle between modes</div>
+          <div>use <span><img src="assets/esc key.png" alt="esc key" class="icon"></span>to pasue and reveal cursor</div>
+          <div>left click <span><img src="assets/mouse_left_click.png" alt="left" class="icon"></span>on the artifact to see its brief info</div>
+          <div>double click <span><img src="assets/mouse_left_click.png" alt="dbl" class="icon"></span>on the artifact to see its detailed info</div> -->
+
+          <div> Here you can experience the virtual musuem in two different modes</div>
+          <div>
+            <button class="player-start-btn start-btn">First Person Mode</button>
+            <button class="hotspot-start-btn start-btn">Article to article Mode</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="player-mode">
+      <div>
+        <div>
+          <div>The Virtual Museum Tour</div>
+          <div>use <span><img src="assets/wasd keys.png" alt="wasd" class="icon_1"></span>keys to move around the experience</div>
+          <div>use <span><img src="assets/mouse icon.png" alt="mouse" class="icon"></span>to look around</div>
+          <div>use <span><img src="assets/t key.png" alt="t key" class="icon"></span>to toggle between modes</div>
+          <div>use <span><img src="assets/esc key.png" alt="esc key" class="icon"></span>to pasue and reveal cursor</div>
+          <div>left click <span><img src="assets/mouse_left_click.png" alt="left" class="icon"></span>on the artifact to see its brief info</div>
+          <div>double click <span><img src="assets/mouse_left_click.png" alt="dbl" class="icon"></span>on the artifact to see its detailed info</div>
+
+          <div >
+            <button class="player-start" >Enter the experience</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="hotspot-mode">
+      <div>
+        <div>
+          <div>The Virtual Museum Tour</div>
+          <div>use <span><img src="assets/left_right.png" alt="left_right" class="icon_1"></span>keys to switch around the articles</div>
+          <div>left click <span><img src="assets/mouse_left_click.png" alt="left" class="icon"></span>on the artifact to see its brief info</div>
+          <div>double click <span><img src="assets/mouse_left_click.png" alt="dbl" class="icon"></span>on the artifact to see its detailed info</div>
+          <div>use <span><img src="assets/t key.png" alt="t key" class="icon"></span>to toggle between modes</div>
+
+          <div >
+            <button class="hotspot-start" >Enter the experience</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="instruc-1">
+      <div class="instruc-container-1">
+        <div>
+          <div>use <span><img src="assets/left_right.png" alt="left_right" class="icon_1"></span>keys to switch around the articles</div>
+          <div>left click <span><img src="assets/mouse_left_click.png" alt="left" class="icon"></span>on artifact for popup</div>
+          <div>double click <span><img src="assets/mouse_left_click.png" alt="dbl" class="icon"></span>on artifact for detailed info</div>
+          <div>use <span><img src="assets/t key.png" alt="t key" class="icon"></span>to toggle to FPS mode</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="instruc-2">
+      <div class="instruc-container-2">
+        <div>
+          <div>use <span><img src="assets/wasd keys.png" alt="wasd" class="icon_1"></span>to move around</div>
+          <div>use <span><img src="assets/mouse icon.png" alt="mouse" class="icon"></span>to look around</div>
+          <div>left click <span><img src="assets/mouse_left_click.png" alt="left" class="icon"></span>on artifact for popup</div>
+          <div>double click <span><img src="assets/mouse_left_click.png" alt="dbl" class="icon"></span>on artifact for detailed info</div>
+          <div>use <span><img src="assets/t key.png" alt="t key" class="icon"></span>to hotspot mode</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="name-tag">
+      <div>
+        Article Name
+      </div>
+    </div>
+
+    <div class="info">
+      <img src="assets/info.png" alt="info">
+      <div>Press i to show info</div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="image-container"></div>
+        <div class="info_">
+          <div class="heading">NAME</div>
+          <div class="meta-info">
+            <div>
+              <h4>Time:</h4>
+              <p>1790</p>
+            </div>
+            <div>
+              <h4>Category:</h4>
+              <p>Example</p>
+            </div>
+          </div>
+          <div class="info-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            euismod, enim eu sagittis placerat, nisi ex viverra risus, ac luctus
+            risus nunc sit amet leo.
+          </div>
+        </div>
+        <div class="close-btn"></div>
+      </div>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tweenjs/1.0.2/tweenjs.min.js"
+      integrity="sha512-pmIhTiQq5a595Lh0A//Q1TMJyGBaNk9RHU+clXtRg/REWYcZ8VbQTTP7OGLmBKRVvtL/ZnwKL4SF7R+zpRsfEw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
+    <script type="module" src="/script2.js"></script>
+  </body>
+</html>
